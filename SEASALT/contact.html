@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact - Sea Salt</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+
+        #nav {
+            position: center;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            height: 45px;
+            background-color: #333;
+            width: 100%;
+            margin: 0 auto;
+            font-family: "verveine", arial, sans-serif;
+        }
+
+        #nav ul {
+            text-align: center;
+            padding: 0;
+            list-style: none;
+            font-size: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav ul li {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #nav ul li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            width: 80px;
+            height: 25px;
+            color: #FFF;
+        }
+
+        #nav ul li a:hover {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        .currentpage {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        /* end buttons */
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 30px;
+            font-family: "athelas", serif;
+        }
+
+        h2 {
+            padding-top: 40px;
+            font-size: 38px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h3 {
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 0;
+            font-size: 24px;
+            font-family: "gill sans nova", arial, sans-serif;
+            line-height: 150%;
+        }
+
+        h4 {
+            text-align: right;
+            padding-top: 10px;
+            padding-right: 20px;
+            font-size: 12px;
+            font-family: "Times New Roman", serif;
+            color: dimgrey;
+        }
+
+        h5 {
+            padding-top: 20px;
+            font-size: 24px;
+            font-family: "gill sans nova", Arial, sans-serif;
+            line-height: 100%;
+        }
+
+
+        .contact {
+            margin: auto;
+            text-align: center;
+        }
+
+
+        .feeds {
+            padding: 20px 20px 20px 20px;
+        }
+
+        a img:last-child {
+            display: none;
+        }
+
+        a:hover img:last-child {
+            display: inline-block;
+        }
+
+        a:hover img:first-child {
+            display: none;
+        }
+
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div id="fb-root"></div>
+
+<!-- facebook script -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v5.0"></script>
+<!-- end facebook script -->
+
+<div align="center">
+    <a href="home.html">
+        <img src="sealogo.png" width="250px"/>
+        <img src="sealogo_hover.png" width="250px"/>
+    </a>
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li class="currentpage"><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+
+<div class="contact">
+    <h3>
+        Phone: 612-721-8990
+    </h3>
+    <h3>
+        <a href="https://twitter.com/seasalteatery?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large"
+           data-show-count="false">Follow @seasalteatery</a>
+        <script async src="https://platform.twitter.com/widgets.js"
+                charset="utf-8"></script>
+        </script></h3>
+</div>
+<h5 align="center">Facebook</h5>
+
+<center>
+    <iframe class="feeds"
+            src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fseasalteatery%2F&tabs=time
+line&width=350&height=750&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+            width="350" height="750" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+            allowTransparency="true" allow="encrypted-media"></iframe>
+</center>
+
+<h5 align="center">Twitter</h5>
+
+<!-- twitter embed -->
+<div align="center" class="feeds">
+    <a class="twitter-timeline" data-lang="en" data-width="350" data-height="750" data-theme="dark"
+       href="https://twitter.com/SeaSaltEatery?ref_src=twsrc%5Etfw">Tweets by SeaSaltEatery</a>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <
+    /div>
+    <!-- end twitter embed -->

@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sea Salt Eatery</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* begin buttons */
+        #nav {
+            margin: 0 auto;
+            position: center;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 45px;
+            background-color: #333;
+            font-family: "verveine", arial, sans-serif;
+        }
+
+        #nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            font-size: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav ul li {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #nav ul li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            width: 80px;
+            height: 25px;
+            color: #FFF;
+        }
+
+        #nav ul li a:hover {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        .currentpage {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        /* end buttons */
+
+        .slideshow-container {
+            display: block;
+            position: relative;
+            margin: auto;
+            width: 100%;
+            height: 400px;
+        }
+
+        .slides {
+            display: none;
+            width: 100%;
+            height: 400px;
+        }
+
+        .slides img {
+            width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+        }
+
+
+        .fade {
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 2s;
+            animation-name: fade;
+            animation-duration: 2s;
+        }
+
+        @-webkit-keyframes fade {
+            from {
+                opacity: 0.7
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0.7
+            }
+            to {
+                opacity: 1
+            }
+        }
+
+
+        .reviews {
+            text-align: center;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(9, 5vw);
+            grid-gap: 15px;
+        }
+
+        .gallery_img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item-1 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item-2 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item-3 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+        .item-4 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        .item-5 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        .item-6 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 4;
+            grid-row-end: 7;
+        }
+
+        .item-7 {
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 7;
+            grid-row-end: 10;
+        }
+
+        .item-8 {
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 7;
+            grid-row-end: 10;
+        }
+
+        .item-9 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 7;
+            grid-row-end: 10;
+        }
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            font-size: 30px;
+            font-family: "athelas", serif;
+        }
+
+        h2 {
+            padding-top: 40px;
+            font-size: 38px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h3 {
+            padding-top: 30px;
+            padding-bottom: 40px;
+            font-size: 24px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h4 {
+            text-align: right;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            font-family: "Times New Roman", serif;
+            color: dimgrey;
+        }
+
+        #icons {
+            text-align: center;
+        }
+
+        #icons ul li {
+            display: inline-block;
+        }
+
+        #icons ul li a {
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+        }
+    </style>
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+</head>
+<body>
+
+<div id="icons">
+    <ul>
+        <li>
+            <a><img src="sealogo.png" alt="seasaltlogo" width="250px"></a>
+        </li>
+    </ul>
+</div>
+
+<div id="nav">
+    <ul>
+        <li class="currentpage"><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+
+<div class="slideshow-container">
+
+    <div class="slides fade">
+        <img src="photo_01.jpg" alt="first_photo" style="width: 100%">
+    </div>
+
+    <div class="slides fade">
+        <img src="photo_02.jpg" alt="second_photo" style="width: 100%">
+    </div>
+
+    <div class="slides fade">
+        <img src="photo_03.jpg" alt="third_photo" style="width: 100%">
+    </div>
+
+</div>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("slides");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 5000); // Change image every x000 seconds
+    }
+
+</script>
+
+<div class="reviews">
+    <h2>
+        <img src="stars.png" alt="five stars" width="200px">
+    </h2>
+    <h2>"Sea Salt Eatery is a must visit!</h2>
+    <h3>
+        -Kimberly Haas Koss
+    </h3>
+    <br>
+    <img src="stars2.png" alt="four and a half stars" width="200px">
+    <br>
+    <h2>
+        "Great food, great outdoor setting. <br> Perfect for families. Can’t wait to go back!"
+    </h2>
+    <h3>
+        -Mary Caffrey
+    </h3>
+    <br>
+</div>
+
+
+<div class="gallery">
+    <figure class="item-1">
+        <img src="photo7.jpg" class="gallery_img" alt="Photo 1">
+    </figure>
+    <figure class="item-2">
+        <img src="photo10.jpg" class="gallery_img" alt="Photo 2">
+    </figure>
+    <figure class="item-3">
+        <img src="photo3.jpg" class="gallery_img" alt="Photo 3">
+    </figure>
+    <figure class="item-4">
+        <img src="photo4.jpg" class="gallery_img" alt="Photo 4">
+    </figure>
+    <figure class="item-5">
+        <img src="photo5.jpg" class="gallery_img" alt="Photo 5">
+    </figure>
+    <figure class="item-6">
+        <img src="photo6.jpg" class="gallery_img" alt="Photo 6">
+    </figure>
+    <figure class="item-7">
+        <img src="photo8.jpg" class="gallery_img" alt="Photo 7">
+    </figure>
+    <figure class="item-8">
+        <img src="photo1.jpg" class="gallery_img" alt="Photo 8">
+    </figure>
+    <figure class="item-9">
+        <img src="photo9.jpg" class="gallery_img" alt="Photo 9">
+    </figure>
+</div>
+
+
+<h4>
+    <hr>
+    Copyright 2019, Sea Salt Eatery
+</h4>
+
+
+</body>
+</html>

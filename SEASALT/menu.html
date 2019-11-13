@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu - Sea Salt</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* begin buttons */
+        #nav {
+            position: center;
+            position: -webkit-sticky;
+            position: sticky;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            height: 45px;
+            background-color: #333;
+            width: 100%;
+            margin: 0 auto;
+            font-family: "verveine", Arial, sans-serif;
+        }
+
+        #nav ul {
+            text-align: center;
+            padding: 0;
+            list-style: none;
+            font-size: 0;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav ul li {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #nav ul li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            width: 80px;
+            height: 25px;
+            color: #FFF;
+        }
+
+        #nav ul li a:hover {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        .currentpage {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        /* end buttons */
+
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            font-size: 30px;
+            font-family: "athelas", serif;
+        }
+
+        h2 {
+            text-align: center;
+            padding-top: 20px;
+            font-size: 38px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h3 {
+            text-align: center;
+            line-height: 150%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 24px;
+            font-family: "gill sans nova", Arial, sans-serif;
+        }
+
+        h4 {
+            text-align: right;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            font-family: "Times New Roman", serif;
+            color: dimgrey;
+        }
+
+        h5 {
+            padding-top: 30px;
+            text-align: center;
+            font-size: 30px;
+            font-family: "athelas", serif;
+        }
+
+        .numbers {
+            font-family: "Gill Sans Nova", arial, sans-serif;
+            color: #3B659B;
+        }
+
+        a img:last-child {
+            display: none;
+        }
+
+        a:hover img:last-child {
+            display: inline-block;
+        }
+
+        a:hover img:first-child {
+            display: none;
+        }
+
+        #appetizers {
+            background-color: aliceblue;
+        }
+
+        #poboys {
+            background-color: aliceblue;
+        }
+
+        #baskets {
+            background-color: aliceblue;
+        }
+
+        #sandwiches {
+            background-color: aliceblue;
+        }
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div align="center">
+    <a href="home.html">
+        <img src="sealogo.png" width="250px"/>
+        <img src="sealogo_hover.png" width="250px"/>
+    </a>
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="currentpage"><a href="menu.html">Menu</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+
+<div id="appetizers">
+    <h5>
+        Appetizers
+    </h5>
+    <h3>
+        Calamari <a class="numbers"> $10.95 </a> <br>
+        Clam Fries <a class="numbers"> $10.95 </a> <br>
+        Peel & Eat Shrimp <a class="numbers"> $10.95 </a> <br>
+        Pickled Herring <a class="numbers"> $4.95 </a> <br>
+        Crab Stuffed Avocado w/ tortilla chips <a class="numbers"> $9.95 </a> <br>
+    </h3>
+</div>
+<h5>
+    Tacos
+</h5>
+<h3>
+    Fried Fish <a class="numbers"> $6.95 </a> <br>
+    Calamari w/corn salsa & cali sauce <a class="numbers"> $8.95 </a> <br>
+    Grilled Mahi Mahi <a class="numbers"> $7.95 </a> <br>
+    Steamed Shrimp <a class="numbers"> $6.95 </a> <br>
+    Grilled Veggie (V) w/corn salsa <a class="numbers"> $5.95 </a> <br>
+    Fried Bay Scallops w/corn salsa & cali sauce <a class="numbers"> $8.95 </a> <br>
+</h3>
+
+<div id="poboys">
+    <h5>
+        Po'Boys
+    </h5>
+    <h3>
+        Fried Oyster <a class="numbers"> $13.95 </a> <br>
+        Fried Catfish <a class="numbers"> $13.95 </a> <br>
+        Grilled Catfish <a class="numbers"> $13.95 </a> <br>
+        Fried Fish <a class="numbers"> $11.95 </a> <br>
+        Fried Shrimp <a class="numbers"> $12.95 </a> <br>
+        Fried Crawfish <a class="numbers"> $13.95 </a> <br>
+    </h3>
+</div>
+
+<h5>
+    Raw Oysters on the Half Shell
+</h5>
+<h3>
+    <a class="numbers"> $3 </a> each <br>
+    <a class="numbers"> $18 </a> half dozen <br>
+    <a class="numbers"> $32 </a> dozen <br>
+    <a class="numbers"> $19.50 </a> half dozen broiled oysters <br>
+</h3>
+
+<div id="baskets">
+    <h5>
+        Baskets
+    </h5>
+    <h3>
+        Single Crabcake <a class="numbers"> $11.95 </a> <br>
+        Double Crabcake <a class="numbers"> $19.95 </a> <br>
+        Fried Fish <a class="numbers"> $11.95 </a> <br>
+        Fried Shrimp <a class="numbers"> $12.95 </a> <br>
+        Fried Oyster <a class="numbers"> $15.95 </a> <br>
+        Fried Catfish <a class="numbers"> $17.95 </a> <br>
+        Kiddie Fish/ or shrimp <a class="numbers"> $6.95 </a> <br>
+    </h3>
+</div>
+
+<h5>
+    Oil Pans
+</h5>
+<h3>
+    18 shrimp, 12 raw oysters, and pickled herring
+    on ice <br> with your choice of a pitcher of beer or
+    a carafe of house wine <br>
+    <a class="numbers"> $59.95 </a> <br>
+</h3>
+
+<div id="sandwiches">
+    <h5>
+        Sandwiches
+    </h5>
+    <h3>
+        Fried Fish <a class="numbers"> $6.95 </a> <br>
+        Walnut-cheese Burger (V) <a class="numbers"> $8.95 </a> <br>
+        Soft-Shell Crab <a class="numbers"> $16.95 </a> <br>
+        Crabcake <a class="numbers"> $12.95 </a> <br>
+        Sexy Ahi Burger <a class="numbers"> $17.95 </a> <br>
+    </h3>
+</div>
+
+<h5>
+    Salads
+</h5>
+<h3>
+    Strawberry Walnut <a class="numbers"> $8.95 </a> <br>
+    House Salad <a class="numbers"> $6.95 </a> <br>
+</h3>
+
+
+<h4>
+    <hr>
+    Copyright 2019, Sea Salt Eatery
+</h4>

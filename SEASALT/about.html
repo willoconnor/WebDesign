@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Sea Salt</title>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed,
+        figure, figcaption, footer, header, hgroup,
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure,
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol, ul {
+            list-style: none;
+        }
+
+        blockquote, q {
+            quotes: none;
+        }
+
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        /* begin buttons */
+        #nav {
+            position: center;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            z-index: 1; /* this makes it go over other things */
+            top: 0;
+            left: 0;
+            height: 45px;
+            background-color: #333;
+            width: 100%;
+            margin: 0 auto;
+            font-family: "verveine", Arial, sans-serif;
+        }
+
+        #nav ul {
+            text-align: center;
+            padding: 0;
+            list-style: none;
+            font-size: 0;
+            position: -webkit-sticky; /* Safari */
+            position: sticky;
+            top: 0;
+        }
+
+        #nav ul li {
+            font-size: 24px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+        }
+
+        #nav ul li a {
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            width: 80px;
+            height: 25px;
+            color: #FFF;
+        }
+
+        #nav ul li a:hover {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+
+        .currentpage {
+            background-color: #3B659B;
+            color: #FFFFFF;
+        }
+
+        /* end buttons */
+
+
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            padding-bottom: 0;
+            font-size: 30px;
+            font-family: "athelas", serif;
+            background-color: aliceblue;
+        }
+
+        h2 {
+            padding-top: 40px;
+            font-size: 38px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h3 {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+            font-family: "gill sans nova", arial, sans-serif;
+        }
+
+        h4 {
+            text-align: right;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+            font-size: 12px;
+            font-family: "Times New Roman", serif;
+            color: dimgrey;
+        }
+
+        h5 {
+            padding-top: 20px;
+            text-align: center;
+            font-size: 30px;
+            font-family: "athelas", serif;
+        }
+
+
+        table {
+            margin: auto;
+        }
+
+
+        table tr td {
+            padding: 10px;
+        }
+
+        th {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+        tr {
+            text-align: right;
+        }
+
+        .box {
+            width: 100%;
+            background-color: aliceblue;
+            padding: 20px 10px 25px 10px;
+            font-family: "Gill Sans Nova", arial, sans-serif;
+            font-size: 20px;
+            line-height: 120%;
+            display: inline-block;
+        }
+
+        #text {
+            width: 450px;
+            text-align: left;
+            margin: auto;
+        }
+
+        .alice {
+            background-color: aliceblue;
+        }
+
+        a img:last-child {
+            display: none;
+        }
+
+        a:hover img:last-child {
+            display: inline-block;
+        }
+
+        a:hover img:first-child {
+            display: none;
+        }
+
+
+    </style>
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+<body>
+<div class="logo" align="center">
+
+    <a href="home.html">
+        <img src="sealogo.png" width="250px"/>
+        <img src="sealogo_hover.png" width="250px"/>
+    </a>
+
+</div>
+
+<div id="nav">
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li class="currentpage"><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="directions.html">Directions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</div>
+<h1>
+    About Us
+</h1>
+<div class="box">
+    <p id="text">
+        • We serve extraordinary fresh seafood, wine & beer daily April through October.
+        We are a casual restaurant in Minnehaha Park adjacent to Minnehaha Falls.
+        <br>
+        • Serving fine wines and a great selection of beer including Surly, Summit & other local brews on tap.
+        <br>
+        • We offer fair trade, shade-grown Peace Coffee and Sebastian Joe's ice cream.
+    </p>
+</div>
+<br>
+<h5>Hours</h5>
+<h3>
+    <table>
+        <tr>
+            <td class="alice">April Opening Date thru Memorial Day</td>
+            <td class="alice">11am-8pm</td>
+        </tr>
+        <tr>
+            <td>Memorial Day thru Labor Day</td>
+            <td>11am-9pm</td>
+        </tr>
+        <tr>
+            <td class="alice">Labor Day thru October Closing Date</td>
+            <td class="alice"> 11am-8pm</td>
+        </tr>
+    </table>
+</h3>
+
+<h1>No Reservations</h1>
+<div class="box">
+    <p id="text">
+        Reservations are not accepted; we operate on a first come, first served basis.
+        We are a casual restaurant where you order your food at the counter and we deliver your order to your table.
+    </p>
+</div>
+
+
+<h4>
+    <hr>
+    Copyright 2019, Sea Salt Eatery
+</h4>
